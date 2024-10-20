@@ -1,0 +1,19 @@
+{
+  "name": "@halvardm/js-monorepo",
+  "version": "0.1.0",
+  "lock": false,
+  "exports": {
+    "./openapi2fetch": "./openapi2fetch/mod.ts",
+    "./bitwarden-sdk": "./bitwarden-sdk/mod.ts"
+  },
+  "tasks": {
+    "generate-specs": "deno run -A ./openapi2fetch/mod.ts --src ./bitwarden-sdk/spec.json --out ./bitwarden-sdk/mod.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.6",
+    "@std/cli": "jsr:@std/cli@^1.0.6",
+    "openapi-typescript": "npm:openapi-typescript@^7.4.1",
+    "@cliffy/command": "jsr:@cliffy/command@1.0.0-rc.7",
+    "openapi-fetch": "npm:openapi-fetch@^0"
+  }
+}
