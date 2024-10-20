@@ -11,10 +11,11 @@
     "generate-specs": "deno run -A ./openapi2fetch/mod.ts --src ./bitwarden-sdk/spec.json --out ./bitwarden-sdk/mod.ts"
   },
   "imports": {
+    "@cliffy/command": "jsr:@cliffy/command@1.0.0-rc.7",
     "@std/assert": "jsr:@std/assert@^1.0.6",
     "@std/cli": "jsr:@std/cli@^1.0.6",
-    "openapi-typescript": "npm:openapi-typescript@^7.4.1",
-    "@cliffy/command": "jsr:@cliffy/command@1.0.0-rc.7",
-    "openapi-fetch": "npm:openapi-fetch@^0"
+    "@std/path": "jsr:@std/path@^1.0.6",
+    "openapi-fetch": "npm:openapi-fetch@^0",
+    "openapi-typescript": "npm:openapi-typescript@^7.4.1"
   }
 }

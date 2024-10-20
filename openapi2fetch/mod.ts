@@ -1,5 +1,5 @@
 import openapiTS, { astToString } from "openapi-typescript";
-import { resolve, toFileUrl } from "jsr:@std/path";
+import { resolve, toFileUrl } from "@std/path";
 import { Command } from "@cliffy/command";
 
 if (import.meta.main) {
