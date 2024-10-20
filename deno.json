@@ -2,6 +2,7 @@
   "name": "@halvardm/js-monorepo",
   "version": "0.1.0",
   "lock": false,
+  "license": "MIT",
   "exports": {
     "./openapi2fetch": "./openapi2fetch/mod.ts",
     "./bitwarden-sdk": "./bitwarden-sdk/mod.ts"
